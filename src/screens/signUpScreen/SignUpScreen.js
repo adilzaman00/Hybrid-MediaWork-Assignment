@@ -4,6 +4,7 @@ import auth from '@react-native-firebase/auth';
 import Styles from './Styles';
 import MainButton from '../../components/buttons/MainButton';
 import LoginFormInput from '../../components/textInputs/LoginFormInput';
+import { setAsyncStorage } from '../../asyncStorage/Index';
 
 const SignUpScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -23,6 +24,7 @@ const SignUpScreen = ({ navigation }) => {
         const userCredential = await auth().createUserWithEmailAndPassword(email, password);
         const user = userCredential.user;
         console.log('Logged in user:', user);
+        setAsyncStorage("UserID", user.uid);
         setLoading(false);
         Alert.alert(
           '',

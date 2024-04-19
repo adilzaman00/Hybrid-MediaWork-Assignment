@@ -23,12 +23,14 @@ const EditModal = ({ visible,
                     <TouchableOpacity onPress={() => onClose()} style={styles.closeButton}>
                         <Icon name='close' size={20} color={"#000"} />
                     </TouchableOpacity>
+                    <Text style={styles.inputTitle}>Title</Text>
                     <TextInput
                         style={styles.input}
                         value={itemValues.Title}
                         onChangeText={text => onChangeTitle(text)}
                         placeholder={modalcheck ? "Edit Title" : "Title"}
                     />
+                    <Text style={styles.inputTitle}>Description</Text>
                     <TextInput
                         style={[styles.input, { height: 100 }]}
                         value={itemValues.Description}
@@ -118,4 +120,8 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         alignItems: 'center',
     },
+    inputTitle:{
+        fontSize:15,
+        color:'#000'
+    }
 });

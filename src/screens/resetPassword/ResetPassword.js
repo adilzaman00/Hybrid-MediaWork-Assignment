@@ -31,7 +31,7 @@ const ResetPassword = ({navigation}) => {
     <View style={Styles.container}>
       <Text style={Styles.title}>Password Reset</Text>
       <View style={{width:'80%'}}>
-        <Text style={Styles.mainText}>Please enter you email</Text>
+        <Text style={Styles.mainText}>Please enter your email</Text>
       </View>
       <LoginFormInput value={email} placeHolder={"Email"} secure={false} onChange={(text) => setEmail(text)} />
       <MainButton title={"Submit"} loading={loading} onPress={() => handleResetPassword()} />

@@ -5,6 +5,7 @@ const Styles = StyleSheet.create({
         flex: 1,
         // alignItems: 'center',
         backgroundColor: '#f0f0f0',
+        paddingHorizontal:'3%',
       },
       header: {
         fontSize: 25,
@@ -69,7 +70,7 @@ const Styles = StyleSheet.create({
       addNewTaskButton:{
         backgroundColor:"#007bff",
         width:'50%',
-        paddingVertical:20,
+        paddingVertical:10,
         borderRadius:10,
         alignSelf:'center',
       },
