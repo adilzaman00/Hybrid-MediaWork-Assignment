@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "867813920227",
+    "project_id": "hybrid-mediawork",
+    "storage_bucket": "hybrid-mediawork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867813920227:android:d1ef9b9afbd6bf874464d6",
+        "android_client_info": {
+          "package_name": "com.hybridmediawork"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2LRMuBnyF4S7WmmL6bQFDT_GlDF0HSlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
